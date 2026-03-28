@@ -1,0 +1,623 @@
+/* BLACK THEME - Pure black background */
+body.dark-mode {
+    background-color: #000000 !important;
+    color: #e0e0e0;
+}
+
+/* Sidebar - Pure black */
+body.dark-mode .sidebar {
+    background: #000000 !important;
+    border-right: 1px solid #1a1a1a;
+}
+
+body.dark-mode .sidebar-wrapper {
+    background: #000000;
+}
+
+body.dark-mode .sidebar .nav-link {
+    color: #a0a0a0;
+}
+
+body.dark-mode .sidebar .nav-link:hover {
+    color: #ffffff;
+    background: #1a1a1a;
+}
+
+body.dark-mode .sidebar .nav-link.active {
+    background: #1a1a1a;
+    border-left: 4px solid #4e73df;
+}
+
+body.dark-mode .instructor-profile-sidebar {
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+}
+
+body.dark-mode .profile-info h6 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .profile-info small,
+body.dark-mode .profile-info p {
+    color: #808080 !important;
+}
+
+/* Main Content Area */
+body.dark-mode .main-content {
+    background: #000000;
+}
+
+/* Cards - Dark gray to stand out from pure black background */
+body.dark-mode .card {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .card-header {
+    background-color: #0f0f0f !important;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+body.dark-mode .card-header h5,
+body.dark-mode .card-header h6 {
+    color: #ffffff;
+}
+
+body.dark-mode .card-body {
+    color: #e0e0e0;
+    background-color: #0a0a0a;
+}
+
+body.dark-mode .card-subtitle {
+    color: #808080 !important;
+}
+
+/* Stats Cards */
+body.dark-mode .stat-card {
+    background: #0a0a0a;
+}
+
+body.dark-mode .stat-card .text-muted {
+    color: #808080 !important;
+}
+
+body.dark-mode .stat-card h2 {
+    color: #ffffff;
+}
+
+/* Course Items */
+body.dark-mode .course-item {
+    background: #0a0a0a;
+    border: 1px solid #1a1a1a;
+}
+
+body.dark-mode .course-item:hover {
+    background: #121212;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+body.dark-mode .course-item h6 {
+    color: #ffffff;
+}
+
+/* Progress Bars */
+body.dark-mode .progress {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .progress-bar {
+    color: #ffffff;
+}
+
+/* Student Items */
+body.dark-mode .student-item {
+    background: #0a0a0a;
+    border-color: #1a1a1a !important;
+}
+
+body.dark-mode .student-item:hover {
+    background: #121212;
+    border-left-color: #4e73df;
+}
+
+body.dark-mode .student-item strong {
+    color: #ffffff;
+}
+
+body.dark-mode .student-item .text-muted {
+    color: #808080 !important;
+}
+
+/* Student Avatar */
+body.dark-mode .student-avatar-small {
+    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    border: 1px solid #4e73df;
+}
+
+/* Activity Items */
+body.dark-mode .activity-item {
+    border-color: #1a1a1a !important;
+}
+
+body.dark-mode .activity-item strong {
+    color: #ffffff;
+}
+
+body.dark-mode .activity-icon.bg-primary {
+    background: linear-gradient(135deg, #4e73df, #224abe) !important;
+}
+
+body.dark-mode .activity-icon.bg-success {
+    background: linear-gradient(135deg, #1cc88a, #17a673) !important;
+}
+
+body.dark-mode .activity-icon.bg-warning {
+    background: linear-gradient(135deg, #f6c23e, #f4b619) !important;
+}
+
+/* Batch Cards */
+body.dark-mode .batch-card {
+    background: #0a0a0a;
+}
+
+body.dark-mode .batch-header {
+    background: #0f0f0f;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+body.dark-mode .batch-header h5 {
+    color: #ffffff;
+}
+
+body.dark-mode .batch-stats span {
+    background: #1a1a1a;
+    color: #a0a0a0;
+}
+
+body.dark-mode .student-list-item {
+    border-bottom-color: #1a1a1a;
+}
+
+body.dark-mode .student-list-item:hover {
+    background: #121212;
+}
+
+body.dark-mode .student-info h6 {
+    color: #ffffff;
+}
+
+body.dark-mode .student-info small {
+    color: #808080 !important;
+}
+
+/* Course Enrollment Cards */
+body.dark-mode .course-enrollment-card {
+    background: #0a0a0a;
+}
+
+body.dark-mode .course-header {
+    background: #0f0f0f;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+body.dark-mode .course-header h5 {
+    color: #ffffff;
+}
+
+body.dark-mode .course-code {
+    background: #1a1a1a;
+    color: #a0a0a0;
+}
+
+body.dark-mode .enrollment-badge {
+    background: #1a1a1a;
+    color: #a0a0a0;
+}
+
+body.dark-mode .enrolled-students-list {
+    background: #0a0a0a;
+}
+
+body.dark-mode .enrolled-student-item {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+body.dark-mode .enrolled-student-item:hover {
+    background: #121212;
+}
+
+body.dark-mode .enrolled-student-item strong {
+    color: #ffffff;
+}
+
+/* Online/Offline Indicators */
+body.dark-mode .student-indicator.online {
+    background: #1cc88a;
+    box-shadow: 0 0 0 2px rgba(28, 200, 138, 0.2);
+}
+
+body.dark-mode .student-indicator.offline {
+    background: #4a4a4a;
+}
+
+/* Tables */
+body.dark-mode .table {
+    color: #e0e0e0;
+}
+
+body.dark-mode .table thead th {
+    background: #0f0f0f !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+body.dark-mode .table tbody tr {
+    border-color: #1a1a1a;
+}
+
+body.dark-mode .table tbody tr:hover {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .table td,
+body.dark-mode .table th {
+    border-color: #1a1a1a;
+}
+
+/* Grade Badges - Adjusted for black theme */
+body.dark-mode .grade-a {
+    background: #0a2a0a;
+    color: #8bc34a;
+    border: 1px solid #2a5a2a;
+}
+
+body.dark-mode .grade-b {
+    background: #0a1a2a;
+    color: #64b5f6;
+    border: 1px solid #1a3a5a;
+}
+
+body.dark-mode .grade-c {
+    background: #2a1a0a;
+    color: #ffb74d;
+    border: 1px solid #5a3a1a;
+}
+
+body.dark-mode .grade-d {
+    background: #2a0a0a;
+    color: #ef5350;
+    border: 1px solid #5a1a1a;
+}
+
+/* Rank Badges */
+body.dark-mode .rank-1 {
+    background: linear-gradient(135deg, #b8860b, #8b6914);
+    border: 1px solid #ffd700;
+}
+
+body.dark-mode .rank-2 {
+    background: linear-gradient(135deg, #6c757d, #5a6268);
+    border: 1px solid #a0a0a0;
+}
+
+body.dark-mode .rank-3 {
+    background: linear-gradient(135deg, #8b5a2b, #6b4226);
+    border: 1px solid #cd7f32;
+}
+
+/* Settings Page */
+body.dark-mode .nav-tabs {
+    border-bottom-color: #1a1a1a;
+}
+
+body.dark-mode .nav-tabs .nav-link {
+    color: #808080;
+    background: transparent;
+    border: none;
+}
+
+body.dark-mode .nav-tabs .nav-link:hover {
+    border-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .nav-tabs .nav-link.active {
+    background-color: #0a0a0a;
+    border-bottom: 2px solid #4e73df;
+    color: #ffffff;
+}
+
+/* Forms */
+body.dark-mode .form-label {
+    color: #e0e0e0;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background-color: #121212;
+    border-color: #4e73df;
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+    color: #ffffff;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #4a4a4a;
+}
+
+body.dark-mode .form-check-label {
+    color: #e0e0e0;
+}
+
+/* Buttons */
+body.dark-mode .btn-outline-secondary {
+    color: #a0a0a0;
+    border-color: #1a1a1a;
+    background: transparent;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+    background-color: #1a1a1a;
+    border-color: #4e73df;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-outline-primary {
+    color: #6ea8fe;
+    border-color: #4e73df;
+    background: transparent;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background-color: #4e73df;
+    color: #ffffff;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #224abe;
+    border-color: #224abe;
+}
+
+/* Modals */
+body.dark-mode .modal-content {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+}
+
+body.dark-mode .modal-header {
+    background: #0f0f0f;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+body.dark-mode .modal-header .btn-close {
+    filter: brightness(0) invert(0.6);
+}
+
+body.dark-mode .modal-title {
+    color: #ffffff;
+}
+
+body.dark-mode .modal-body {
+    background: #0a0a0a;
+}
+
+body.dark-mode .modal-footer {
+    border-top: 1px solid #1a1a1a;
+    background: #0a0a0a;
+}
+
+/* Alerts */
+body.dark-mode .alert-primary {
+    background: #0f0f0f;
+    border: 1px solid #4e73df;
+    color: #ffffff;
+}
+
+body.dark-mode .alert-primary .alert-heading {
+    color: #ffffff;
+}
+
+/* Borders */
+body.dark-mode .border-bottom {
+    border-bottom-color: #1a1a1a !important;
+}
+
+body.dark-mode .border-top {
+    border-top-color: #1a1a1a !important;
+}
+
+/* Text colors */
+body.dark-mode .text-dark {
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .text-secondary {
+    color: #808080 !important;
+}
+
+body.dark-mode .text-muted {
+    color: #808080 !important;
+}
+
+/* Welcome banner */
+body.dark-mode .welcome-banner {
+    background: #0f0f0f;
+    border: 1px solid #4e73df;
+}
+
+/* Calendar input */
+body.dark-mode #calendar {
+    background-color: #0a0a0a;
+    border-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Student profile header */
+body.dark-mode .student-profile-header {
+    background: #0f0f0f;
+    border: 1px solid #4e73df;
+}
+
+body.dark-mode .student-avatar-large {
+    background: #1a1a1a;
+    color: #4e73df;
+    border: 3px solid #4e73df;
+}
+
+/* Theme options */
+body.dark-mode .theme-option {
+    background: #0a0a0a;
+    border: 2px solid #1a1a1a;
+}
+
+body.dark-mode .theme-option:hover {
+    background: #121212;
+}
+
+body.dark-mode .theme-option.selected {
+    border-color: #4e73df;
+    background: #121212;
+}
+
+/* Layout options */
+body.dark-mode .layout-option {
+    background: #0a0a0a;
+    border: 2px solid #1a1a1a;
+}
+
+body.dark-mode .layout-option:hover {
+    background: #121212;
+}
+
+body.dark-mode .layout-option.selected {
+    border-color: #4e73df;
+    background: #121212;
+}
+
+/* Toast notifications */
+body.dark-mode .toast-notification {
+    background: #0f0f0f;
+    color: #ffffff;
+    border-left: 4px solid #4e73df;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    border: 1px solid #1a1a1a;
+}
+
+/* Scrollbar */
+body.dark-mode .main-content::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+body.dark-mode .main-content::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+}
+
+body.dark-mode .main-content::-webkit-scrollbar-thumb:hover {
+    background: #4e73df;
+}
+
+/* Enrolled students scrollbar */
+body.dark-mode .enrolled-students-list::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+body.dark-mode .enrolled-students-list::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+}
+
+body.dark-mode .enrolled-students-list::-webkit-scrollbar-thumb:hover {
+    background: #4e73df;
+}
+
+/* Dropdown menus */
+body.dark-mode .dropdown-menu {
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+}
+
+body.dark-mode .dropdown-item {
+    color: #e0e0e0;
+}
+
+body.dark-mode .dropdown-item:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Pagination */
+body.dark-mode .pagination .page-link {
+    background-color: #0a0a0a;
+    border-color: #1a1a1a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .pagination .page-link:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .pagination .active .page-link {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+/* Badges */
+body.dark-mode .badge.bg-light {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0;
+}
+
+body.dark-mode .badge.bg-success {
+    background-color: #1cc88a !important;
+    color: #000000;
+}
+
+body.dark-mode .badge.bg-warning {
+    background-color: #f6c23e !important;
+    color: #000000;
+}
+
+body.dark-mode .badge.bg-danger {
+    background-color: #e74a3b !important;
+    color: #000000;
+}
+
+/* Links */
+body.dark-mode a:not(.btn):not(.nav-link) {
+    color: #6ea8fe;
+}
+
+body.dark-mode a:not(.btn):not(.nav-link):hover {
+    color: #8bb9fe;
+}
+
+/* Icons */
+body.dark-mode .bi,
+body.dark-mode .fa {
+    color: inherit;
+}
+
+/* Profile picture upload */
+body.dark-mode .profile-picture-upload .btn-outline-primary {
+    background: #0a0a0a;
+    border-color: #4e73df;
+    color: #6ea8fe;
+}
+
+body.dark-mode .profile-picture-upload .btn-outline-primary:hover {
+    background: #4e73df;
+    color: #ffffff;
+}
