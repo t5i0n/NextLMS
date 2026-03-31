@@ -25,7 +25,7 @@
 .student-list-item {
     padding: 12px 20px;
     border-bottom: 1px solid #e3e6f0;
-    transition: background 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -104,7 +104,7 @@
     align-items: center;
     padding: 8px 10px;
     border-radius: 10px;
-    transition: background 0.3s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
@@ -125,7 +125,7 @@
 /* Enrollment Badge */
 .enrollment-badge {
     background: #e3e6f0;
-    color: #4e73df;
+    color: #6b8beb;
     font-size: 12px;
     font-weight: 600;
     padding: 5px 10px;

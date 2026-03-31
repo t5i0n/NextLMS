@@ -1,11 +1,11 @@
 /* style.css - Replace with this complete updated version */
 
 :root {
-    --primary-color: #4e73df;
-    --success-color: #1cc88a;
-    --info-color: #36b9cc;
-    --warning-color: #f6c23e;
-    --danger-color: #e74a3b;
+    --primary-color: #94a9ea;
+    --success-color: #94f5d1;
+    --info-color: #80e4f4;
+    --warning-color: #f5d992;
+    --danger-color: #ea7c72;
     --sidebar-width: 280px;
 }
 
@@ -16,7 +16,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     overflow: hidden;
 }
@@ -179,6 +180,7 @@ body {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -224,10 +226,21 @@ body {
     font-size: 24px;
 }
 
-.stat-icon.bg-primary { background: linear-gradient(135deg, var(--primary-color), #224abe) !important; }
-.stat-icon.bg-success { background: linear-gradient(135deg, var(--success-color), #17a673) !important; }
-.stat-icon.bg-warning { background: linear-gradient(135deg, var(--warning-color), #f4b619) !important; }
-.stat-icon.bg-danger { background: linear-gradient(135deg, var(--danger-color), #d52a1a) !important; }
+.stat-icon.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), #224abe) !important;
+}
+
+.stat-icon.bg-success {
+    background: linear-gradient(135deg, var(--success-color), #17a673) !important;
+}
+
+.stat-icon.bg-warning {
+    background: linear-gradient(135deg, var(--warning-color), #f4b619) !important;
+}
+
+.stat-icon.bg-danger {
+    background: linear-gradient(135deg, var(--danger-color), #d52a1a) !important;
+}
 
 /* Course Progress */
 .course-item {
@@ -300,9 +313,17 @@ body {
     justify-content: center;
 }
 
-.activity-icon.bg-primary { background: linear-gradient(135deg, var(--primary-color), #224abe) !important; }
-.activity-icon.bg-success { background: linear-gradient(135deg, var(--success-color), #17a673) !important; }
-.activity-icon.bg-warning { background: linear-gradient(135deg, var(--warning-color), #f4b619) !important; }
+.activity-icon.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), #224abe) !important;
+}
+
+.activity-icon.bg-success {
+    background: linear-gradient(135deg, var(--success-color), #17a673) !important;
+}
+
+.activity-icon.bg-warning {
+    background: linear-gradient(135deg, var(--warning-color), #f4b619) !important;
+}
 
 /* Student Details Page */
 .student-profile-header {
@@ -622,18 +643,21 @@ body {
     transition: width 0.3s;
 }
 
-.layout-option, .theme-option {
+.layout-option,
+.theme-option {
     cursor: pointer;
     transition: all 0.3s;
     border: 2px solid transparent;
 }
 
-.layout-option:hover, .theme-option:hover {
+.layout-option:hover,
+.theme-option:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.layout-option.selected, .theme-option.selected {
+.layout-option.selected,
+.theme-option.selected {
     border-color: var(--primary-color);
     background: rgba(78, 115, 223, 0.05);
 }
@@ -647,7 +671,7 @@ body {
     color: #333;
     padding: 12px 24px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     z-index: 9999;
     transform: translateX(400px);
     transition: transform 0.3s;
@@ -730,25 +754,25 @@ body.dark-mode .course-item:hover {
         width: 100%;
         height: auto;
     }
-    
+
     .main-content {
         margin-left: 0;
         width: 100%;
         padding: 15px !important;
     }
-    
+
     .instructor-profile-sidebar {
         margin-top: 20px;
     }
-    
+
     .batch-header {
         padding: 15px;
     }
-    
+
     .student-list-item {
         padding: 10px 15px;
     }
-    
+
     .settings-tabs .nav-link {
         padding: 8px 12px;
         font-size: 14px;
@@ -775,16 +799,15 @@ body.dark-mode .course-item:hover {
 }
 
 
-.calendar-box{
-margin-top:10px;
+.calendar-box {
+    margin-top: 10px;
 }
 
-#calendar{
-padding:8px 12px;
-border-radius:6px;
-border:1px solid #ccc;
-font-size:14px;
-cursor:pointer;
+#calendar {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
 
 }
-

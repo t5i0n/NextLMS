@@ -22,7 +22,7 @@
 }
 
 .main-content::-webkit-scrollbar-thumb:hover {
-    background: #224abe;
+    background: #5386d3;
 }
 
 .page {
@@ -39,6 +39,7 @@
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -63,7 +64,7 @@
 }
 
 .student-profile-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #8da1fc 0%, #aa78db 100%);
     color: white;
     padding: 40px;
     border-radius: 15px;
