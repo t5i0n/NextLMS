@@ -2,7 +2,7 @@
 const DashboardModule = {
     render() {
         const page = document.getElementById('dashboard-page');
-        
+
         page.innerHTML = `
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Instructor Dashboard</h1>
@@ -61,12 +61,12 @@ const DashboardModule = {
                 </div>
             </div>
         `;
-        
+
         // Set today's date
         const today = new Date().toISOString().split('T')[0];
         document.getElementById('calendar').value = today;
     },
-    
+
     renderStats() {
         // EXACTLY as shown in screenshot
         return `
@@ -135,7 +135,7 @@ const DashboardModule = {
             </div>
         `;
     },
-    
+
     renderCourseProgress() {
         return `
             <div class="row">
@@ -214,7 +214,7 @@ const DashboardModule = {
             </div>
         `;
     },
-    
+
     renderStudentProgress() {
         return `
             <div class="student-progress-list">
@@ -293,7 +293,7 @@ const DashboardModule = {
             </div>
         `;
     },
-    
+
     renderRecentActivity() {
         return `
             <div class="activity-list">
