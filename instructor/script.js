@@ -43,12 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
 function initializeSampleData() {
     // Students data
     studentsData = [
-        { id: 'ST001', name: 'Sami', batch: 'Batch 1', email: 'sami@email.com', enrollmentDate: '2025-09-01' },
-        { id: 'ST002', name: 'Tsi', batch: 'Batch 1', email: 'tsi@email.com', enrollmentDate: '2025-08-15' },
-        { id: 'ST003', name: 'Miky', batch: 'Batch 2', email: 'miky@email.com', enrollmentDate: '2024-01-10' },
-        { id: 'ST004', name: 'Emma', batch: 'Batch 2', email: 'emma@email.com', enrollmentDate: '2024-01-15' },
-        { id: 'ST005', name: 'John', batch: 'Batch 1', email: 'john@email.com', enrollmentDate: '2025-08-20' },
-        { id: 'ST006', name: 'Bety', batch: 'Batch 2', email: 'bety@email.com', enrollmentDate: '2024-02-01' },
+        { id: 'ST001', name: 'Samuel', batch: 'Batch 1', email: 'samiuel@email.com', enrollmentDate: '2025-09-01' },
+        { id: 'ST002', name: 'Tsion', batch: 'Batch 1', email: 'tsion@email.com', enrollmentDate: '2025-08-15' },
+        { id: 'ST003', name: 'Mikyas', batch: 'Batch 2', email: 'mikyas@email.com', enrollmentDate: '2024-01-10' },
+        { id: 'ST004', name: 'Eldana', batch: 'Batch 2', email: 'eldana@email.com', enrollmentDate: '2024-01-15' },
+        { id: 'ST005', name: 'Yohannes', batch: 'Batch 1', email: 'yohannes@email.com', enrollmentDate: '2025-08-20' },
+        { id: 'ST006', name: 'Biruk', batch: 'Batch 2', email: 'biruk@email.com', enrollmentDate: '2024-02-01' },
         { id: 'ST007', name: 'Lidiya', batch: 'Batch 2', email: 'lidiya@email.com', enrollmentDate: '2024-01-20' },
         { id: 'ST008', name: 'Abel', batch: 'Batch 1', email: 'abel@email.com', enrollmentDate: '2025-09-05' }
     ];
@@ -92,16 +92,14 @@ function initializeSampleData() {
 
     // Grades data
     gradesData = [
-        { studentId: 'ST001', studentName: 'Sami', course: 'Getting Started with Google Docs', grade: 95, courseId: 'CS105' },
-        { studentId: 'ST003', studentName: 'Miky', course: 'Getting Started with Google Docs', grade: 90, courseId: 'CS105' },
-        { studentId: 'ST005', studentName: 'John', course: 'Getting Started with Google Docs', grade: 85, courseId: 'CS105' },
-        { studentId: 'ST008', studentName: 'Abel', course: 'Getting Started with Google Docs', grade: 82, courseId: 'CS105' },
-        { studentId: 'ST001', studentName: 'Sami', course: 'GitHub Basics for Beginners', grade: 92, courseId: 'CS101' },
-        { studentId: 'ST002', studentName: 'Tsi', course: 'GitHub Basics for Beginners', grade: 88, courseId: 'CS101' },
-        { studentId: 'ST005', studentName: 'John', course: 'GitHub Basics for Beginners', grade: 67, courseId: 'CS101' },
-        { studentId: 'ST008', studentName: 'Abel', course: 'GitHub Basics for Beginners', grade: 78, courseId: 'CS101' },
-        { studentId: 'ST003', studentName: 'Miky', course: 'Canva Design Basics for Beginners', grade: 78, courseId: 'CS103' },
-        { studentId: 'ST006', studentName: 'Bety', course: 'Canva Design Basics for Beginners', grade: 95, courseId: 'CS103' }
+        { studentId: 'ST001', studentName: 'Samuel', course: 'Getting Started with Google Docs', grade: 95, courseId: 'CS105' },
+        { studentId: 'ST003', studentName: 'Mikyas', course: 'LinkedIn Essentials for Beginners', grade: 90, courseId: 'CS105' },
+        { studentId: 'ST005', studentName: 'Yohannes', course: 'Getting Started with Google Docs', grade: 85, courseId: 'CS105' },
+        { studentId: 'ST002', studentName: 'Tsion', course: 'GitHub Basics for Beginners', grade: 88, courseId: 'CS101' },
+        { studentId: 'ST005', studentName: 'Yohannes', course: 'GitHub Basics for Beginners', grade: 67, courseId: 'CS101' },
+        { studentId: 'ST008', studentName: 'Abel', course: 'LinkedIn Essentials for Beginners', grade: 78, courseId: 'CS101' },
+        { studentId: 'ST003', studentName: 'Mikyas', course: 'Canva Design Basics for Beginners', grade: 78, courseId: 'CS103' },
+        { studentId: 'ST006', studentName: 'Biruk', course: 'Canva Design Basics for Beginners', grade: 95, courseId: 'CS103' }
     ];
 }
 
