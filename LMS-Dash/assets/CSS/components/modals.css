@@ -1,0 +1,17 @@
+/* Modal Styles */
+.modal-content {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--info-color));
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+}
+
+.modal-header .btn-close {
+    filter: brightness(0) invert(1);
+}
