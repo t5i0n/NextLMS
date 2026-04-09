@@ -1,10 +1,10 @@
 // Settings Module
 const SettingsModule = {
     currentTheme: localStorage.getItem('theme') || 'light',
-    
+
     render() {
         const page = document.getElementById('settings-page');
-        
+
         page.innerHTML = `
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Settings</h1>
@@ -36,11 +36,11 @@ const SettingsModule = {
                 ${this.renderAppearanceTab()}
             </div>
         `;
-        
+
         // Apply current theme on load
         this.applyTheme(this.currentTheme);
     },
-    
+
     renderProfileTab() {
         return `
             <div class="tab-pane fade show active" id="profile" role="tabpanel">
@@ -82,7 +82,7 @@ const SettingsModule = {
             </div>
         `;
     },
-    
+
     renderPasswordTab() {
         return `
             <div class="tab-pane fade" id="password" role="tabpanel">
@@ -116,7 +116,7 @@ const SettingsModule = {
             </div>
         `;
     },
-    
+
     renderCoursesTab() {
         return `
             <div class="tab-pane fade" id="courses-settings" role="tabpanel">
@@ -159,7 +159,7 @@ const SettingsModule = {
             </div>
         `;
     },
-    
+
     renderNotificationsTab() {
         return `
             <div class="tab-pane fade" id="notifications" role="tabpanel">
@@ -202,7 +202,7 @@ const SettingsModule = {
             </div>
         `;
     },
-    
+
     renderAppearanceTab() {
         return `
             <div class="tab-pane fade" id="appearance" role="tabpanel">
@@ -234,20 +234,20 @@ const SettingsModule = {
             </div>
         `;
     },
-    
+
     // FIXED: Theme functions that actually work
     selectTheme(theme) {
         this.currentTheme = theme;
         this.applyTheme(theme);
         localStorage.setItem('theme', theme);
-        
+
         // Update UI selection
         document.querySelectorAll('.theme-option').forEach(opt => {
             opt.classList.remove('selected');
         });
         event.currentTarget.classList.add('selected');
     },
-    
+
     applyTheme(theme) {
         if (theme === 'dark') {
             document.body.classList.add('dark-mode');
@@ -255,52 +255,52 @@ const SettingsModule = {
             document.body.classList.remove('dark-mode');
         }
     },
-    
+
     saveProfile() {
         const name = document.getElementById('profileName').value;
         const email = document.getElementById('profileEmail').value;
         const bio = document.getElementById('profileBio').value;
-        
+
         // Update sidebar
         const sidebarName = document.querySelector('.profile-info h6');
         const sidebarEmail = document.querySelector('.profile-info small');
         const sidebarBio = document.querySelector('.profile-info p');
-        
+
         if (sidebarName) sidebarName.textContent = name;
         if (sidebarEmail) sidebarEmail.textContent = email;
         if (sidebarBio) sidebarBio.innerHTML = `<i class="bi bi-chat-quote"></i> ${bio}`;
-        
+
         showNotification('Profile updated successfully!', 'success');
     },
-    
+
     changePassword() {
         const current = document.getElementById('currentPassword').value;
         const newPass = document.getElementById('newPassword').value;
         const confirm = document.getElementById('confirmPassword').value;
-        
+
         if (!current || !newPass || !confirm) {
             showNotification('Please fill in all fields', 'error');
             return;
         }
-        
+
         if (newPass !== confirm) {
             document.getElementById('confirmPassword').classList.add('is-invalid');
             return;
         }
-        
+
         if (newPass.length < 8) {
             showNotification('Password must be at least 8 characters long', 'error');
             return;
         }
-        
+
         showNotification('Password changed successfully!', 'success');
         document.getElementById('passwordSettingsForm').reset();
     },
-    
+
     saveCourseSettings() {
         showNotification('Course settings saved!', 'success');
     },
-    
+
     saveNotificationSettings() {
         const settings = {
             emailSubmissions: document.getElementById('emailSubmissions').checked,
@@ -311,22 +311,22 @@ const SettingsModule = {
         localStorage.setItem('notificationSettings', JSON.stringify(settings));
         showNotification('Notification preferences saved!', 'success');
     },
-    
+
     saveAppearance() {
         showNotification('Appearance settings applied!', 'success');
     }
 };
 
 // Add password strength listener
-document.addEventListener('input', function(e) {
+document.addEventListener('input', function (e) {
     if (e.target.id === 'newPassword') {
         const strength = checkPasswordStrength(e.target.value);
         const progressBar = document.getElementById('passwordStrength');
         const strengthText = document.getElementById('passwordStrengthText');
-        
+
         if (progressBar) {
             progressBar.style.width = strength + '%';
-            
+
             if (strength < 40) {
                 progressBar.className = 'progress-bar bg-danger';
                 strengthText.textContent = 'Weak password';
@@ -339,7 +339,7 @@ document.addEventListener('input', function(e) {
             }
         }
     }
-    
+
     if (e.target.id === 'confirmPassword') {
         const newPass = document.getElementById('newPassword')?.value;
         if (e.target.value !== newPass) {
