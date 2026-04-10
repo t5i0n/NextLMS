@@ -48,7 +48,7 @@ body {
     width: var(--sidebar-width);
     z-index: 100;
     padding: 0;
-    background: linear-gradient(180deg, #1a1e2b 0%, #2c3e50 100%);
+    background: #131823;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -189,7 +189,7 @@ body {
 
 /* Welcome Banner */
 .welcome-banner {
-    background: linear-gradient(135deg, var(--primary-color), var(--info-color));
+    background: rgb(31, 50, 69);
     color: white;
     border: none;
     border-radius: 15px;
