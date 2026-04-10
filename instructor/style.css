@@ -714,37 +714,37 @@ body {
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #1a1e2b;
+    background-color: #000000;
     color: #e0e0e0;
 }
 
 body.dark-mode .card {
-    background-color: #2c3e50;
-    border-color: #3a4a5a;
+    background-color: #080d11;
+    border-color: #3b3d40;
 }
 
 body.dark-mode .card-header {
-    background-color: #34495e !important;
-    border-bottom-color: #3a4a5a;
+    background-color: #595b5c !important;
+    border-bottom-color: #2c2d2e;
 }
 
 body.dark-mode .text-muted {
-    color: #a0a0a0 !important;
+    color: #ffffff !important;
 }
 
 body.dark-mode .bg-white {
-    background-color: #2c3e50 !important;
+    background-color: #0c0c0c !important;
 }
 
 body.dark-mode .student-item,
 body.dark-mode .course-item {
-    background: #2c3e50;
+    background: #1a1c1e;
     color: #e0e0e0;
 }
 
 body.dark-mode .student-item:hover,
 body.dark-mode .course-item:hover {
-    background: #34495e;
+    background: #292a2a;
 }
 
 /* Responsive Adjustments */
