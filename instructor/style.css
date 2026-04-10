@@ -714,37 +714,388 @@ body {
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #000000;
-    color: #e0e0e0;
+    background-color: #0a0e17;
+    color: #e9ecef;
 }
 
+/* Main background and content area */
+body.dark-mode .main-content {
+    background-color: #0a0e17;
+}
+
+/* Cards - Clean dark surface */
 body.dark-mode .card {
-    background-color: #080d11;
-    border-color: #3b3d40;
+    background-color: #131823;
+    border-color: #2a313c;
+    box-shadow: 0 0.15rem 1rem 0 rgba(0, 0, 0, 0.3);
 }
 
 body.dark-mode .card-header {
-    background-color: #595b5c !important;
-    border-bottom-color: #2c2d2e;
+    background-color: #0f1419 !important;
+    border-bottom-color: #2a313c;
+    color: #e9ecef;
 }
 
+body.dark-mode .card-body {
+    background-color: #131823;
+}
+
+/* Text colors */
 body.dark-mode .text-muted {
-    color: #ffffff !important;
+    color: #fcfcfc !important;
 }
 
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #f1f3f5;
+}
+
+body.dark-mode .text-dark {
+    color: #e9ecef !important;
+}
+
+/* Background utilities override */
 body.dark-mode .bg-white {
-    background-color: #0c0c0c !important;
+    background-color: #131823 !important;
 }
 
-body.dark-mode .student-item,
+body.dark-mode .bg-light {
+    background-color: #0f1419 !important;
+}
+
+/* Student and course items */
+body.dark-mode .student-item {
+    background: #131823;
+    border-bottom: 1px solid #2a313c;
+}
+
+body.dark-mode .student-item:hover {
+    background: #1a222d;
+    border-left-color: #ffffff;
+}
+
 body.dark-mode .course-item {
-    background: #1a1c1e;
-    color: #e0e0e0;
+    background: #2e3543;
 }
 
-body.dark-mode .student-item:hover,
 body.dark-mode .course-item:hover {
-    background: #292a2a;
+    background: #1a222d;
+    box-shadow: 0 0.15rem 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Table styles */
+body.dark-mode .table {
+    color: #414244;
+}
+
+body.dark-mode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+body.dark-mode .table-hover tbody tr:hover {
+    background-color: rgba(77, 124, 255, 0.08);
+    color: #e9ecef;
+}
+
+body.dark-mode .table-bordered {
+    border-color: #2a313c;
+}
+
+body.dark-mode .table-bordered th,
+body.dark-mode .table-bordered td {
+    border-color: #2a313c;
+}
+
+/* Grading badges - adjusted for dark mode */
+body.dark-mode .grade-a {
+    background: #0d3b1f;
+    color: #7df9a2;
+}
+
+body.dark-mode .grade-b {
+    background: #0a3a44;
+    color: #7de6f9;
+}
+
+body.dark-mode .grade-c {
+    background: #4a3a0a;
+    color: #f9e67d;
+}
+
+body.dark-mode .grade-d {
+    background: #4a1a1a;
+    color: #f9a27d;
+}
+
+/* Batch cards */
+body.dark-mode .batch-card {
+    background-color: #131823;
+    border-color: #2a313c;
+}
+
+body.dark-mode .batch-header {
+    background: #0f1419 !important;
+    border-bottom: 1px solid #2a313c;
+}
+
+body.dark-mode .student-list-item {
+    border-bottom-color: #2a313c;
+}
+
+body.dark-mode .student-list-item:hover {
+    background: #1a222d;
+}
+
+/* Stats cards */
+body.dark-mode .stat-card {
+    background-color: #131823;
+}
+
+/* Settings page styles */
+body.dark-mode .settings-tabs {
+    border-bottom-color: #22272f;
+}
+
+body.dark-mode .settings-tabs .nav-link {
+    color: #8c99a6;
+}
+
+body.dark-mode .settings-tabs .nav-link.active {
+    color: #7ba0ff;
+    border-bottom-color: #7ba0ff;
+}
+
+body.dark-mode .settings-tabs .nav-link:hover {
+    color: #7ba0ff;
+}
+
+/* Forms and inputs */
+body.dark-mode .form-control {
+    background-color: #0f1419;
+    border-color: #2a313c;
+    color: #e9ecef;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #0f1419;
+    border-color: #4d7cff;
+    color: #e9ecef;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #6c7a8a;
+}
+
+body.dark-mode .input-group-text {
+    background-color: #1a222d;
+    border-color: #2a313c;
+    color: #e9ecef;
+}
+
+/* Dropdown menus */
+body.dark-mode .dropdown-menu {
+    background-color: #131823;
+    border-color: #2a313c;
+}
+
+body.dark-mode .dropdown-item {
+    color: #e9ecef;
+}
+
+body.dark-mode .dropdown-item:hover {
+    background-color: #1a222d;
+    color: #fff;
+}
+
+/* Modals */
+body.dark-mode .modal-content {
+    background-color: #131823;
+    border-color: #2a313c;
+}
+
+body.dark-mode .modal-header {
+    border-bottom-color: #2a313c;
+}
+
+body.dark-mode .modal-footer {
+    border-top-color: #2a313c;
+}
+
+/* Progress bars */
+body.dark-mode .progress {
+    background-color: #2a313c;
+}
+
+/* Activity items */
+body.dark-mode .activity-item {
+    background: #131823;
+}
+
+body.dark-mode .activity-item:hover {
+    background: #1a222d;
+}
+
+/* Toast notifications in dark mode */
+body.dark-mode .toast-notification {
+    background: #131823;
+    color: #e9ecef;
+    border-left-color: #4d7cff;
+}
+
+/* Border utilities */
+body.dark-mode .border {
+    border-color: #2a313c !important;
+}
+
+body.dark-mode .border-bottom {
+    border-bottom-color: #2a313c !important;
+}
+
+body.dark-mode .border-top {
+    border-top-color: #2a313c !important;
+}
+
+/* Student profile header - adjusted for dark mode */
+body.dark-mode .student-profile-header {
+    background: #0f1419;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .student-avatar-large {
+    background: #1a222d;
+    color: #7ba0ff;
+    border-color: #2a313c;
+}
+
+/* Rankings table */
+body.dark-mode .rankings-table thead th {
+    background: #0f1419;
+    color: #e9ecef;
+}
+
+body.dark-mode .rankings-table tbody tr:hover {
+    background: #1a222d;
+}
+
+/* Badge adjustments */
+body.dark-mode .badge.bg-secondary {
+    background-color: #2a313c !important;
+}
+
+/* Enrollment badge */
+body.dark-mode .enrollment-badge {
+    background: #1a222d;
+    color: #e9ecef;
+}
+
+/* Calendar input */
+body.dark-mode #calendar {
+    background-color: #0f1419;
+    border-color: #2a313c;
+    color: #e9ecef;
+}
+
+body.dark-mode #calendar:focus {
+    border-color: #4d7cff;
+    outline: none;
+}
+
+/* Layout options hover in dark mode */
+body.dark-mode .layout-option:hover,
+body.dark-mode .theme-option:hover {
+    background: #1a222d;
+}
+
+body.dark-mode .layout-option.selected,
+body.dark-mode .theme-option.selected {
+    border-color: #4d7cff;
+    background: rgba(77, 124, 255, 0.1);
+}
+
+/* Scrollbar for dark mode */
+body.dark-mode .main-content::-webkit-scrollbar-track {
+    background: #0f1419;
+}
+
+body.dark-mode .main-content::-webkit-scrollbar-thumb {
+    background: #2a313c;
+}
+
+body.dark-mode .main-content::-webkit-scrollbar-thumb:hover {
+    background: #4d7cff;
+}
+
+/* List groups */
+body.dark-mode .list-group-item {
+    background-color: #131823;
+    border-color: #2a313c;
+    color: #e9ecef;
+}
+
+/* Ensure sidebar stays dark but distinct */
+body.dark-mode .sidebar {
+    background: linear-gradient(180deg, #0a0e17 0%, #0f1419 100%);
+}
+
+/* Fix any remaining white backgrounds */
+body.dark-mode [class*="bg-"]:not(.bg-primary):not(.bg-success):not(.bg-warning):not(.bg-danger):not(.bg-info):not(.bg-transparent) {
+    background-color: initial;
+}
+
+/* Keep primary colored backgrounds intact but adjust text */
+body.dark-mode .bg-primary,
+body.dark-mode .bg-success,
+body.dark-mode .bg-warning,
+body.dark-mode .bg-danger,
+body.dark-mode .bg-info {
+    color: #fff;
+}
+
+/* Force fix for white backgrounds - Add this to the end of your dark mode section */
+body.dark-mode .table,
+body.dark-mode .card,
+body.dark-mode .bg-white {
+    background-color: #131823 !important;
+    color: #e9ecef !important;
+}
+
+body.dark-mode .table td,
+body.dark-mode .table th {
+    background-color: #131823 !important;
+    color: #e9ecef !important;
+    border-color: #2a313c !important;
+}
+
+body.dark-mode .table thead th {
+    background-color: #0f1419 !important;
+}
+
+/* Fix hover text visibility on dark mode */
+body.dark-mode .student-list-item:hover,
+body.dark-mode .enrolled-student-item:hover,
+body.dark-mode .student-item:hover {
+    color: #000000 !important;
+}
+
+body.dark-mode .student-list-item:hover h6,
+body.dark-mode .student-list-item:hover small,
+body.dark-mode .enrolled-student-item:hover span,
+body.dark-mode .enrolled-student-item:hover small,
+body.dark-mode .student-item:hover h6,
+body.dark-mode .student-item:hover small {
+    color: #000000 !important;
+}
+
+/* Fix hover visibility for student progress items only */
+body.dark-mode .student-item:hover h6,
+body.dark-mode .student-item:hover small,
+body.dark-mode .student-item:hover .text-muted,
+body.dark-mode .student-item:hover .badge {
+    color: #969191 !important;
 }
 
 /* Responsive Adjustments */
