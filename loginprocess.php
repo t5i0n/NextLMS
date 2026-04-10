@@ -40,10 +40,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             exit();
         } else {
-            echo "<script>alert('Incorrect password!'); window.location.href='../Login Page 2.0/index.html';</script>";
+            echo "<script>alert('Incorrect password!'); window.location.href='../login-page/index.html';</script>";
         }
     } else {
-        echo "<script>alert('User not found!'); window.location.href='../Login Page 2.0/index.html';</script>";
+        echo "<script>alert('User not found!'); window.location.href='../login-page/index.html';</script>";
     }
     $stmt->close();
 }
