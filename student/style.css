@@ -14,7 +14,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     overflow: hidden;
 }
@@ -180,6 +181,7 @@ body {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -225,10 +227,21 @@ body {
     font-size: 24px;
 }
 
-.stat-icon.bg-primary { background: linear-gradient(135deg, var(--primary-color), #224abe) !important; }
-.stat-icon.bg-success { background: linear-gradient(135deg, var(--success-color), #17a673) !important; }
-.stat-icon.bg-warning { background: linear-gradient(135deg, var(--warning-color), #f4b619) !important; }
-.stat-icon.bg-info { background: linear-gradient(135deg, var(--info-color), #2c9faf) !important; }
+.stat-icon.bg-primary {
+    background: linear-gradient(135deg, var(--primary-color), #224abe) !important;
+}
+
+.stat-icon.bg-success {
+    background: linear-gradient(135deg, var(--success-color), #17a673) !important;
+}
+
+.stat-icon.bg-warning {
+    background: linear-gradient(135deg, var(--warning-color), #f4b619) !important;
+}
+
+.stat-icon.bg-info {
+    background: linear-gradient(135deg, var(--info-color), #2c9faf) !important;
+}
 
 /* Course Progress */
 .course-item {
@@ -412,7 +425,7 @@ body.dark-mode .assignment-item:hover {
     background: white;
     padding: 12px 24px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     z-index: 9999;
     transform: translateX(400px);
     transition: transform 0.3s;
@@ -436,7 +449,7 @@ body.dark-mode .assignment-item:hover {
 
 .theme-option:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .theme-option.selected {
@@ -451,14 +464,61 @@ body.dark-mode .assignment-item:hover {
         width: 100%;
         height: auto;
     }
-    
+
     .main-content {
         margin-left: 0;
         width: 100%;
         padding: 15px !important;
     }
-    
+
     .student-profile-sidebar {
         margin-top: 20px;
     }
+}
+
+/* Google Forms Styles for Student Page */
+.google-form-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: white;
+}
+
+.google-form-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-submitted-badge {
+    background: #28a745;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+}
+
+.form-pending-badge {
+    background: #dc3545;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+}
+
+.student-profile-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--info-color));
+    padding: 30px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Dark Mode */
+body.dark-mode .google-form-card {
+    background: #2c3e50;
+    border-color: #3a4a5a;
+    color: #e0e0e0;
 }
