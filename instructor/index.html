@@ -515,6 +515,26 @@
             <div id="student-details-container">
               <!-- Will be populated by JavaScript -->
             </div>
+            <!-- Google Forms Assessments Section - FOR THIS STUDENT -->
+  <div class="row mt-4">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">
+            <i class="bi bi-google me-2"></i>Google Forms Assessments
+          </h5>
+          <button type="button" class="btn btn-sm btn-outline-primary" onclick="showAddGoogleFormForStudent()">
+            <i class="bi bi-plus-circle me-1"></i>Assign Form
+          </button>
+        </div>
+        <div class="card-body">
+          <div id="student-google-forms-list" class="row">
+            <!-- Student-specific Google Forms will be loaded here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
           </div>
 
           <!-- Students Dashboard Page -->
@@ -554,33 +574,14 @@
                 <i class="bi bi-plus-circle me-1"></i>Add Course
               </button>
             </div>
+
             <!-- Courses with Enrolled Students -->
             <div id="courses-with-students" class="row">
               <!-- Will be populated by JavaScript -->
             </div>
+
+            
           </div>
-
-
-          <!-- Google Forms Integration Section - Add to Courses Page -->
-<div class="row mt-4">
-  <div class="col-12">
-    <div class="card">
-      <div class="card-header bg-white d-flex justify-content-between align-items-center">
-        <h5 class="mb-0">
-          <i class="bi bi-google me-2"></i>Google Forms Assessments
-        </h5>
-        <button type="button" class="btn btn-sm btn-outline-primary" onclick="showAddGoogleFormModal()">
-          <i class="bi bi-plus-circle me-1"></i>Add Google Form
-        </button>
-      </div>
-      <div class="card-body">
-        <div id="googleFormsList" class="row">
-          <!-- Google Forms will be dynamically loaded here -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
           <!-- Grades Dashboard Page -->
           <div id="grades-page" class="page">
@@ -802,8 +803,6 @@
                   Notifications
                 </button>
               </li>
-
-              
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
@@ -1424,82 +1423,6 @@ Passionate educator with 5+ years of experience in web development and design.</
         </div>
       </div>
     </div>
-    <!-- Add Google Form Modal - Add this near the end of the body, before the closing </body> tag -->
-<div class="modal fade" id="addGoogleFormModal" tabindex="-1">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">
-          <i class="bi bi-google me-2"></i>Add Google Form
-        </h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <form id="addGoogleForm">
-          <div class="mb-3">
-            <label class="form-label">Form Title</label>
-            <input type="text" class="form-control" id="formTitle" placeholder="e.g., Midterm Assessment" required>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Associated Course</label>
-            <select class="form-select" id="formCourse" required>
-              <option value="">Select Course</option>
-              <option value="GitHub Basics for Beginners">GitHub Basics for Beginners</option>
-              <option value="LinkedIn Essentials for Beginners">LinkedIn Essentials for Beginners</option>
-              <option value="Canva Design Basics for Beginners">Canva Design Basics for Beginners</option>
-              <option value="Getting Started with Google Docs">Getting Started with Google Docs</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Google Form Embed URL</label>
-            <input type="url" class="form-control" id="formEmbedUrl" placeholder="https://docs.google.com/forms/d/e/.../viewform?embedded=true" required>
-            <small class="text-muted">
-              <i class="bi bi-info-circle"></i> 
-              To get the embed URL: Open your Google Form → Click Send → Click the embed tab (<>)
-            </small>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Description (Optional)</label>
-            <textarea class="form-control" id="formDescription" rows="2" placeholder="Describe this assessment..."></textarea>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Due Date (Optional)</label>
-            <input type="datetime-local" class="form-control" id="formDueDate">
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Points</label>
-            <input type="number" class="form-control" id="formPoints" value="100" min="0" max="1000">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-primary" onclick="addGoogleForm()">Add Form</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- View Google Form Modal -->
-<div class="modal fade" id="viewGoogleFormModal" tabindex="-1">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="viewFormTitle">Google Form</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body p-0">
-        <iframe id="googleFormIframe" src="" width="100%" height="600px" frameborder="0" marginheight="0" marginwidth="0" style="border: none;">Loading…</iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success" onclick="submitGoogleFormResponse()">
-          <i class="bi bi-check-circle me-1"></i>Mark as Submitted
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
